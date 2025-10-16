@@ -15,13 +15,13 @@ export function SideBar() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/Website/#/about" className="nav-link">
+                        <Link to="/#/about" className="nav-link">
                             <FaUser className="nav-icon" />
                             <span className="nav-text">About</span>
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/Website/#/cv" className="nav-link">
+                        <Link to="/#/cv" className="nav-link">
                             <FaFileAlt className="nav-icon" />
                             <span className="nav-text">CV</span>
                         </Link>
