@@ -9,19 +9,19 @@ export function SideBar() {
             <nav>
                 <ul>
                     <li className="nav-item">
-                        <Link to="/website" className="nav-link">
+                        <Link to="/Website" className="nav-link">
                             <FaHome className="nav-icon" />
                             <span className="nav-text">Home</span>
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/about" className="nav-link">
+                        <Link to="/Website/about" className="nav-link">
                             <FaUser className="nav-icon" />
                             <span className="nav-text">About</span>
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/cv" className="nav-link">
+                        <Link to="/Website/cv" className="nav-link">
                             <FaFileAlt className="nav-icon" />
                             <span className="nav-text">CV</span>
                         </Link>
