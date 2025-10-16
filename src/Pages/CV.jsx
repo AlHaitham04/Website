@@ -12,7 +12,7 @@ function CV() {
 
                 <div className="cv-embed">
                     <embed
-                        src="/cv.pdf"
+                        src="/Website/cv.pdf"
                         type="application/pdf"
                         width="100%"
                         height="100%"
