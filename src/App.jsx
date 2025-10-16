@@ -1,5 +1,6 @@
 import './App.css';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+
 import { SideBar } from './Components/sbf/sideBar';
 import Home from './Pages/Home';
 import About from './Pages/About';
@@ -11,9 +12,9 @@ function App() {
       <div className="App">
         <SideBar />
         <Routes>
-          <Route path="/Website/#/" element={<Home />} />
-          <Route path="/#/about" element={<About />} />
-          <Route path="/#/cv" element={<CV />} />
+          <Route path="/Website" element={<Home />} />
+          <Route path="/Website/about" element={<About />} />
+          <Route path="/Website/cv" element={<CV />} />
         </Routes>
       </div>
     </Router>
