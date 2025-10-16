@@ -9,7 +9,7 @@ export function SideBar() {
             <nav>
                 <ul>
                     <li className="nav-item">
-                        <Link to="/" className="nav-link">
+                        <Link to="/website" className="nav-link">
                             <FaHome className="nav-icon" />
                             <span className="nav-text">Home</span>
                         </Link>
