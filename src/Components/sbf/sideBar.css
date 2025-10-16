@@ -76,14 +76,33 @@ nav ul {
 
 /* --- MOBILE --- */
 @media screen and (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px;
+        /* slightly smaller padding */
+    }
+
+    .title {
+        margin-left: 0;
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
+    }
+
     .menu-toggle {
         display: block;
+        align-self: flex-start;
+        /* aligns with title */
+        margin-top: 5px;
+        margin-left: 0;
+        /* bring icon closer to the title */
     }
 
     nav {
         width: 100%;
         display: none;
         flex-direction: column;
+        padding: 0 10px;
+        /* shrink container width */
     }
 
     nav.active {
@@ -97,13 +116,15 @@ nav ul {
 
     nav ul li {
         width: 100%;
-        margin: 5px 0;
+        margin: 3px 0;
+        /* less space between items */
     }
 
     .nav-link {
         width: 100%;
         justify-content: flex-start;
-        padding-left: 20px;
+        padding: 8px 10px;
+        /* less padding inside links */
     }
 
     .nav-text {
