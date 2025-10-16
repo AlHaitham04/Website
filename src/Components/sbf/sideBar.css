@@ -92,8 +92,8 @@ nav ul {
         display: block;
         align-self: flex-start;
         /* aligns with title */
-        margin-top: 5px;
-        margin-left: 0;
+        margin-top: 0;
+        margin-right: 0;
         /* bring icon closer to the title */
     }
 
