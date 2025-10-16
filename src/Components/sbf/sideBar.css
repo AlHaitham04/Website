@@ -77,14 +77,13 @@ nav ul {
 @media screen and (max-width: 768px) {
     .nav-bar {
         flex-direction: row;
-        /* stays in a row */
         align-items: center;
         justify-content: space-between;
-        /* spreads title and toggle */
         padding: 10px 15px;
     }
 
     .title {
+        margin-top: 0;
         margin-left: 0;
         font-size: clamp(1.5rem, 5vw, 2.5rem);
     }
@@ -101,7 +100,6 @@ nav ul {
         flex-direction: column;
         padding: 0 10px;
         margin-top: 10px;
-        /* space between toggle and dropdown */
     }
 
     nav.active {
