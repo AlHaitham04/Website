@@ -74,13 +74,14 @@ nav ul {
     visibility: visible;
 }
 
-/* --- MOBILE --- */
 @media screen and (max-width: 768px) {
     .nav-bar {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        /* stays in a row */
+        align-items: center;
+        justify-content: space-between;
+        /* spreads title and toggle */
         padding: 10px 15px;
-        /* slightly smaller padding */
     }
 
     .title {
@@ -90,11 +91,8 @@ nav ul {
 
     .menu-toggle {
         display: block;
-        align-self: flex-start;
-        /* aligns with title */
-        margin-top: 0;
-        margin-right: 0;
-        /* bring icon closer to the title */
+        margin: 0;
+        align-self: center;
     }
 
     nav {
@@ -102,7 +100,8 @@ nav ul {
         display: none;
         flex-direction: column;
         padding: 0 10px;
-        /* shrink container width */
+        margin-top: 10px;
+        /* space between toggle and dropdown */
     }
 
     nav.active {
@@ -117,14 +116,12 @@ nav ul {
     nav ul li {
         width: 100%;
         margin: 3px 0;
-        /* less space between items */
     }
 
     .nav-link {
         width: 100%;
         justify-content: flex-start;
         padding: 8px 10px;
-        /* less padding inside links */
     }
 
     .nav-text {
