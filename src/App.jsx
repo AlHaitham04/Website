@@ -1,11 +1,9 @@
 import './App.css';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { SideBar } from './Components/sbf/sideBar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 import Home from './Pages/Home';
 import About from './Pages/About';
 import CV from './Pages/CV';
-
 
 function App() {
   return (
@@ -14,8 +12,8 @@ function App() {
         <SideBar />
         <Routes>
           <Route path="/Website" element={<Home />} />
-          <Route path="/Website/about" element={<About />} />
-          <Route path="/Website/cv" element={<CV />} />
+          <Route path="/Website/#/about" element={<About />} />
+          <Route path="/Website/#/cv" element={<CV />} />
         </Routes>
       </div>
     </Router>
