@@ -85,7 +85,7 @@ nav ul {
     .title {
         margin-top: 0;
         margin-left: 1rem;
-        font-size: clamp(1.5rem, 5vw, 2.5rem);
+        font-size: clamp(1rem, 4.5vw, 2rem);
     }
 
     .menu-toggle {
