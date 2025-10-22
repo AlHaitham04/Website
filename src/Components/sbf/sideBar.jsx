@@ -2,7 +2,7 @@ import "./sidebar.css";
 import { Link } from "react-router-dom";
 import { FaHome, FaUser, FaFileAlt } from "react-icons/fa";
 import { useState } from "react";
-import { FaBars } from "react-icons/fa"; // hamburger icon
+import { FaBars } from "react-icons/fa";
 
 export function SideBar() {
     const [isOpen, setIsOpen] = useState(false);

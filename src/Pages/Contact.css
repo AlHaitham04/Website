@@ -6,7 +6,6 @@
 }
 
 .contact-section {
-    background-color: white;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -17,14 +16,14 @@
     font-weight: 700;
     text-align: center;
     margin-bottom: 1.5rem;
-    color: #222;
+    color: rgb(225, 255, 255);
 }
 
 .contact-description {
     font-size: 1.2rem;
     text-align: center;
     margin-bottom: 2rem;
-    color: #444;
+    color: rgb(225, 255, 255);
 }
 
 form {
@@ -41,7 +40,7 @@ form {
 label {
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: #333;
+    color: rgb(225, 255, 255);
 }
 
 input,

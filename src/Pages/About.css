@@ -2,7 +2,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
-    font-family: 'Inter', sans-serif;
+
     color: #333;
     font-size: 1.2rem;
     line-height: 2rem;
@@ -11,9 +11,10 @@
 .section {
     margin-bottom: 4rem;
     padding: 2rem;
-    background-color: white;
+    background-color: rgb(8, 30, 52);
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+
 }
 
 .Title {
@@ -27,13 +28,13 @@
 h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #444;
+    color: rgb(137, 187, 207);
 }
 
 p {
     font-size: 1.2rem;
     line-height: 2rem;
-    color: #444;
+    color: rgb(225, 255, 255);
 }
 
 .Ed-container,
@@ -63,7 +64,7 @@ img {
     justify-content: left;
 }
 
-/* Responsive Layout */
+
 @media (max-width: 768px) {
 
     .Ed-container,
