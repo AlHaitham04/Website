@@ -84,14 +84,14 @@ nav ul {
 
     .title {
         margin-top: 0;
-        margin-left: 2rem;
+        margin-left: 1rem;
         font-size: clamp(1.5rem, 5vw, 2.5rem);
     }
 
     .menu-toggle {
         display: block;
         margin-top: 0;
-        margin-right: 3rem;
+        margin-right: 2rem;
         align-self: center;
     }
 
