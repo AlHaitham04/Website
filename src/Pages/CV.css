@@ -27,22 +27,51 @@
     color: rgb(225, 255, 255);
 }
 
-
+/* ✅ FIXED PDF DISPLAY */
 .cv-embed {
-    height: 80vh;
+    position: relative;
     width: 100%;
-    border: 1px solid;
+    height: 80vh;
+    border: none;
     border-radius: 8px;
     overflow: hidden;
 }
 
+.cv-embed iframe,
+.cv-embed embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
 
+/* ---------- MOBILE VIEW ---------- */
 @media (max-width: 768px) {
-    .cv-embed {
-        height: 60vh;
+    .cv-section {
+        padding: 1.2rem;
     }
 
     .Title {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
+    }
+
+    .cv-text {
+        font-size: 1rem;
+    }
+
+    .cv-embed {
+        height: 90vh;
+        /* ✅ taller for better mobile view */
+        border: none;
+    }
+
+    .cv-embed iframe,
+    .cv-embed embed {
+        height: 100%;
+        width: 100%;
+        transform: scale(1);
+        transform-origin: top left;
     }
 }
