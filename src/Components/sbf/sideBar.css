@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    height: 7.5rem;
+    height: 7rem;
     background-color: rgb(3, 16, 29);
     padding: 10px 30px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
@@ -17,6 +17,7 @@
     font-size: clamp(1.2rem, 3vw, 2.2rem);
     color: white;
     font-weight: 600;
+    margin-top: 0.5rem;
 }
 
 .menu-toggle {
@@ -27,6 +28,7 @@
     cursor: pointer;
     display: none;
     margin-right: 3rem;
+    margin-top: 0.5rem;
 }
 
 nav {
@@ -41,6 +43,7 @@ nav ul {
     justify-content: flex-end;
     align-items: center;
     gap: 2rem;
+    margin-top: 0.5rem;
 }
 
 .nav-item {
@@ -84,21 +87,15 @@ nav ul {
 /* ---------- MOBILE VIEW ---------- */
 @media screen and (max-width: 768px) {
     .nav-bar {
-        flex-direction: column;
-        align-items: flex-start;
         padding: 10px 20px;
     }
 
     .title {
         font-size: clamp(1.4rem, 5vw, 2rem);
-        margin-bottom: 0.5rem;
     }
 
     .menu-toggle {
         display: block;
-        align-self: flex-end;
-        margin-right: 1rem;
-        margin-bottom: 0.5rem;
     }
 
     nav {
@@ -106,37 +103,17 @@ nav ul {
         display: none;
         flex-direction: column;
         background-color: rgb(3, 16, 29);
-        /* ✅ solid background for dropdown */
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        padding: 10px 0;
-        position: relative;
-        /* keeps it within navbar */
-        z-index: 999;
     }
 
     nav.active {
         display: flex;
-        animation: dropdownFade 0.3s ease;
-    }
-
-    @keyframes dropdownFade {
-        from {
-            opacity: 0;
-            transform: translateY(-10px);
-        }
-
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
     }
 
     nav ul {
         flex-direction: column;
         align-items: flex-start;
-        width: 100%;
-        gap: 0.8rem;
+        gap: 0.6rem;
+
     }
 
     .nav-item {
@@ -145,23 +122,25 @@ nav ul {
 
     .nav-link {
         width: 100%;
+        display: flex;
+        align-items: center;
         justify-content: flex-start;
         padding: 12px 18px;
-        gap: 1rem;
-        border-radius: 0;
-    }
-
-    .nav-link:hover {
-        background-color: rgba(107, 229, 254, 0.15);
+        gap: 0.8rem;
+        line-height: 0.7;
     }
 
     .nav-icon {
-        font-size: 2rem;
+        font-size: 1.4rem;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .nav-text {
         opacity: 1 !important;
         visibility: visible !important;
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 }
