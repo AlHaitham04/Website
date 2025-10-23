@@ -1,8 +1,7 @@
 import "./sidebar.css";
 import { Link } from "react-router-dom";
-import { FaHome, FaUser, FaFileAlt } from "react-icons/fa";
+import { FaHome, FaUser, FaFileAlt, FaGithub, FaBars } from "react-icons/fa";
 import { useState } from "react";
-import { FaBars } from "react-icons/fa";
 
 export function SideBar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -34,6 +33,18 @@ export function SideBar() {
                             <FaFileAlt className="nav-icon" />
                             <span className="nav-text">CV</span>
                         </Link>
+                    </li>
+                    <li className="nav-item">
+                        <a
+                            href="https://github.com/AlHaitham04"
+                            className="nav-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            <FaGithub className="nav-icon" />
+                            <span className="nav-text">GitHub</span>
+                        </a>
                     </li>
                 </ul>
             </nav>
