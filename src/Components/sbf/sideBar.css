@@ -27,7 +27,6 @@
     color: white;
     cursor: pointer;
     display: none;
-    margin-right: 4rem;
     margin-top: 0.5rem;
 }
 
@@ -96,6 +95,8 @@ nav ul {
 
     .menu-toggle {
         display: block;
+        margin-right: 1.5rem;
+        align-self: center;
     }
 
     nav {
