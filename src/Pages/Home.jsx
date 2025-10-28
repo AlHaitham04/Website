@@ -3,6 +3,8 @@ import "../App.css";
 import ContactMe from '../Pages/Contact';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Project1 from "../PortfolioImage.png";
+import commingSoon from "../commingSoon.JPG";
 
 function Home() {
     useEffect(() => {
@@ -26,8 +28,32 @@ function Home() {
 
             <section data-aos="fade-up">
                 <h1>Projects</h1>
-                <div className="Projects">
-                    <p className="homeP">Projects will be added soon.</p>
+                <div className="ProjectsGrid">
+                    <div className="project-item">
+                        <h3>Investment Portfolio Tracker</h3>
+                        <a href="https://alhaitham04.github.io/Portfolio" target="_blank" rel="noopener noreferrer">
+                            <img src={Project1} alt="Project 1" />
+                        </a>
+                        <div className="project-overlay">
+                            <p>A personal portfolio tracker built with React, Node.js, and MySQL.
+                                Users can sign up, log transactions, view portfolio breakdown, track average
+                                costs, and visualize profit/loss and investment distribution.</p>
+                        </div>
+                    </div>
+                    <div className="project-item">
+                        <h3>Project 2 Coming Soon!</h3>
+                        <img src={commingSoon} alt="commingSoon" />
+                        <div className="project-overlay">
+
+                        </div>
+                    </div>
+                    <div className="project-item">
+                        <h3>Project 3 Coming Soon!</h3>
+                        <img src={commingSoon} alt="commingSoon" />
+                        <div className="project-overlay">
+                        </div>
+                    </div>
+                    {/* Add more project-items here */}
                 </div>
             </section>
 

@@ -27,7 +27,6 @@
     color: rgb(225, 255, 255);
 }
 
-/* ✅ FIXED PDF DISPLAY */
 .cv-embed {
     position: relative;
     width: 100%;
@@ -47,6 +46,28 @@
     border: none;
 }
 
+.mobile-download {
+    display: none;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.pdf-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: rgba(118, 203, 224, 0.507);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.pdf-button:hover {
+    background-color: rgba(118, 203, 224, 0.507);
+}
+
 /* ---------- MOBILE VIEW ---------- */
 @media (max-width: 768px) {
     .cv-section {
@@ -62,16 +83,10 @@
     }
 
     .cv-embed {
-        height: 90vh;
-        /* ✅ taller for better mobile view */
-        border: none;
+        display: none;
     }
 
-    .cv-embed iframe,
-    .cv-embed embed {
-        height: 100%;
-        width: 100%;
-        transform: scale(1);
-        transform-origin: top left;
+    .mobile-download {
+        display: block;
     }
 }

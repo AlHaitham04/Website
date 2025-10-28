@@ -19,6 +19,17 @@ function CV() {
                         title="CV PDF Viewer"
                     />
                 </div>
+
+                <div className="mobile-download">
+                    <a
+                        href="/Website/cv.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="pdf-button"
+                    >
+                        Open CV
+                    </a>
+                </div>
             </section>
         </div>
     );
