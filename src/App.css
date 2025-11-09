@@ -96,7 +96,7 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(3, 16, 29, 0.8);
+    background-color: rgba(3, 16, 29, 0.85);
     color: #fff;
     display: flex;
     justify-content: center;
@@ -106,11 +106,22 @@ h1 {
     opacity: 0;
     transition: opacity 0.3s ease;
     border-radius: 10px;
+    overflow: auto;
+    pointer-events: none;
+}
+
+.project-overlay p {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    margin: 0;
+    word-wrap: break-word;
+    padding-right: 1rem;
 }
 
 .project-item:hover .project-overlay {
     opacity: 1;
 }
+
 
 .project-title {
     margin-top: 0.5rem;
