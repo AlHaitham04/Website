@@ -47,7 +47,9 @@ function Home() {
                             <img src={Project2} alt="Project 2" />
                         </a>
                         <div className="project-overlay">
-                            <p>An e-commerce website built with React and MySQL. Users can browse products, add items to their cart, complete purchases, and receive real-time updates. Integrated with a WhatsApp API for instant order notifications and customer support.</p>
+                            <p>An e-commerce website built with React and MySQL. Users can browse products,
+                                add items to their cart, complete purchases, and receive real-time updates.
+                                Integrated with a WhatsApp API to send orders to the business.</p>
 
                         </div>
                     </div>
