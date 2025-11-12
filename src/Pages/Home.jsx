@@ -42,21 +42,15 @@ function Home() {
                         </div>
                     </div>
                     <div className="project-item">
-                        <h3>Project 2 Coming Soon!</h3>
+                        <h3>E-Commerce Website</h3>
                         <a href="https://alhaitham04.github.io/IndulgeWebsite/#/" target="_blank" rel="noopener noreferrer">
                             <img src={Project2} alt="Project 2" />
                         </a>
                         <div className="project-overlay">
-                            <p>An e-commerce website built with React and MySQL. Users can browse products,
+                            <p>An e-commerce website built with React. Users can browse products,
                                 add items to their cart, complete purchases, and receive real-time updates.
                                 Integrated with a WhatsApp API to send orders to the business.</p>
 
-                        </div>
-                    </div>
-                    <div className="project-item">
-                        <h3>Project 3 Coming Soon!</h3>
-                        <img src={commingSoon} alt="commingSoon" />
-                        <div className="project-overlay">
                         </div>
                     </div>
                     {/* Add more project-items here */}
