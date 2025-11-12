@@ -140,6 +140,7 @@ h1 {
 @media (max-width: 768px) {
     .ProjectsGrid {
         display: flex;
+        flex-direction: column;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;

@@ -12,7 +12,7 @@ function CV() {
 
                 <div className="cv-embed">
                     <embed
-                        src="/Website/cv.pdf"
+                        src="/Website/CV.pdf"
                         type="application/pdf"
                         width="100%"
                         height="100%"
@@ -22,7 +22,7 @@ function CV() {
 
                 <div className="mobile-download">
                     <a
-                        href="/Website/cv.pdf"
+                        href="/Website/CV.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="pdf-button"
