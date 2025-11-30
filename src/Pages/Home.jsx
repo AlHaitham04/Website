@@ -49,7 +49,7 @@ function Home() {
                         <div className="project-overlay">
                             <p>An e-commerce website built with React. Users can browse products,
                                 add items to their cart, complete purchases, and receive real-time updates.
-                                Integrated with a WhatsApp API to send orders to the business.</p>
+                            </p>
 
                         </div>
                     </div>
